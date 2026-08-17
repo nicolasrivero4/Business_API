@@ -1,0 +1,3 @@
+2026-08-16 22:19:52,237 | WARNING | Se intento crear un Usuario con Email invalido o repetido. Email: jose@example.com
+2026-08-16 22:41:11,829 | INFO | Usuario creado correctamente. Email: juan@example.com
+2026-08-16 22:41:27,095 | WARNING | Se intento crear un Usuario con Email invalido o repetido. Email: juan@example.com
