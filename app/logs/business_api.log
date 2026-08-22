@@ -1,3 +1,14 @@
 2026-08-16 22:19:52,237 | WARNING | Se intento crear un Usuario con Email invalido o repetido. Email: jose@example.com
 2026-08-16 22:41:11,829 | INFO | Usuario creado correctamente. Email: juan@example.com
 2026-08-16 22:41:27,095 | WARNING | Se intento crear un Usuario con Email invalido o repetido. Email: juan@example.com
+2026-08-17 22:51:09,865 | INFO | Usuario creado correctamente. Email: user@example.com
+2026-08-17 22:51:44,098 | INFO | Se elimino un usuario. ID: 5
+2026-08-18 17:24:24,454 | INFO | Usuario creado correctamente. Email: prueba@example.com
+2026-08-18 17:24:52,973 | INFO | Se actualizaron los datos del usuario. ID: 6
+2026-08-18 17:29:08,177 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-18 17:31:18,749 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-18 23:00:26,896 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-18 23:00:39,954 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-18 23:01:07,989 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-18 23:58:28,053 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-19 00:10:57,980 | INFO | Inicio de sesion. Email: prueba@example.com

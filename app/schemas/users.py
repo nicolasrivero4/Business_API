@@ -4,7 +4,7 @@ from pydantic import BaseModel, ConfigDict, Field, EmailStr
 
 from app.schemas.enum import UserRole
 
-class UsersResponse(BaseModel):
+class UserResponse(BaseModel):
     id: int
     name: str
     email: str
@@ -14,8 +14,12 @@ class UsersResponse(BaseModel):
 
     model_config = ConfigDict(from_attributes=True)
 
-class UsersCreate(BaseModel):
+class UserCreate(BaseModel):
     name: str = Field(min_length=1, max_length=50)
-    email: EmailStr = Field(min_length=1, max_length=100)
-    password_hash: str
+    email: EmailStr
+    password: str
     role: UserRole
+
+class UserUpdate(BaseModel):
+    name: str = Field(min_length=1, max_length=50)
+    email: EmailStr
