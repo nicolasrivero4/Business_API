@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 
 from app.models.users import User
+from app.schemas.users import UserCreateAdmin
 from app.core.security import hash_password
 from app.core.logger import logger
 
@@ -12,11 +13,17 @@ class UserService:
 
     def user_create(self, db:Session, user):
         try:
+            if isinstance(user, UserCreateAdmin):
+                role = user.role
+
+            else:
+                role = "EMPLOYEE"
+
             new_user = User(
                 name = user.name,
                 email = user.email,
                 password_hash = hash_password(user.password),
-                role = user.role
+                role = role
             )
             db.add(new_user)
             db.commit()
@@ -37,7 +44,6 @@ class UserService:
             )
 
     def user_get(self, db: Session, user_id):
-
         statement = select(User).where(User.id == user_id)
         result = db.execute(statement)
     
@@ -52,8 +58,22 @@ class UserService:
                 
         return user
 
-    def user_update(self, db: Session, user, user_id):
+    def users_get(self, db:Session):
+        statement = select(User)
+        result = db.execute(statement)
 
+        users = result.scalars().all()
+
+        if not users:
+
+            raise HTTPException(
+                status_code=404,
+                detail="No hay usuarios"
+            )
+
+        return users
+
+    def user_update(self, db: Session, user, user_id):
         statement = select(User).where(User.id == user_id)
         result = db.execute(statement)
 
@@ -88,7 +108,6 @@ class UserService:
             )
 
     def user_delete(self, db: Session, user_id):
-
         statement = select(User).where(User.id == user_id)
         result = db.execute(statement)
 

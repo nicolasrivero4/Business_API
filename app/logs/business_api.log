@@ -12,3 +12,31 @@
 2026-08-18 23:01:07,989 | INFO | Inicio de sesion. Email: prueba@example.com
 2026-08-18 23:58:28,053 | INFO | Inicio de sesion. Email: prueba@example.com
 2026-08-19 00:10:57,980 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-22 20:14:21,897 | INFO | Usuario creado correctamente. Email: usuario_empleado@example.com
+2026-08-22 20:15:22,779 | INFO | Inicio de sesion. Email: usuario_empleado@example.com
+2026-08-22 20:17:16,890 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-22 20:34:17,572 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-22 20:38:55,387 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-22 20:48:43,507 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-22 20:49:16,294 | INFO | Usuario creado correctamente. Email: usuario_admin_2@example.com
+2026-08-22 20:51:30,158 | INFO | Usuario creado correctamente. Email: usuario_admin_3@example.com
+2026-08-22 20:55:01,669 | INFO | Inicio de sesion. Email: usuario_empleado@example.com
+2026-08-22 22:08:40,810 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-22 22:16:43,621 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-22 22:17:04,637 | INFO | Inicio de sesion. Email: usuario_empleado@example.com
+2026-08-22 22:19:01,466 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-22 22:19:21,561 | INFO | Se elimino un usuario. ID: 2
+2026-08-23 15:09:08,948 | INFO | Inicio de sesion. Email: usuario_empleado@example.com
+2026-08-23 15:10:00,090 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-23 15:10:13,445 | INFO | Categoria creada correctamente. ID: 1
+2026-08-23 15:10:40,985 | WARNING | Se intento crear una categoria repetida. Nombre: Bebidas
+2026-08-23 15:10:58,631 | INFO | Categoria creada correctamente. ID: 3
+2026-08-23 15:11:38,020 | WARNING | Se intento crear una categoria repetida. Nombre: Comida
+2026-08-23 15:13:53,574 | INFO | Categoria creada correctamente. ID: 5
+2026-08-23 17:27:50,327 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-23 17:30:18,247 | INFO | Se actualizo la categoria. ID: 3
+2026-08-23 17:30:37,441 | INFO | Se actualizo la categoria. ID: 3
+2026-08-23 17:30:44,274 | INFO | Se actualizo la categoria. ID: 3
+2026-08-23 17:31:14,344 | INFO | Se actualizo la categoria. ID: 3
+2026-08-23 17:36:45,909 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-23 17:36:59,517 | INFO | Se elimino una categoria. ID: 1

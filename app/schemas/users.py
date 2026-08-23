@@ -18,8 +18,13 @@ class UserCreate(BaseModel):
     name: str = Field(min_length=1, max_length=50)
     email: EmailStr
     password: str
-    role: UserRole
 
+class UserCreateAdmin(BaseModel):
+    name: str = Field(min_length=1, max_length=50)
+    email: EmailStr
+    password: str
+    role: UserRole
+    
 class UserUpdate(BaseModel):
     name: str = Field(min_length=1, max_length=50)
     email: EmailStr

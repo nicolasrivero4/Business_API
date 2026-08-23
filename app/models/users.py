@@ -7,7 +7,7 @@ from sqlalchemy.orm import Mapped, mapped_column
 from app.database.base import Base
 
 class UserRole(PyEnum):
-    ADMIM = "ADMIM"
+    ADMIN = "ADMIN"
     EMPLOYEE = "EMPLOYEE"
 
 class User(Base):

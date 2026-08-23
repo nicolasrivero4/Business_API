@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 
 from app.core.security import decode_access_token
 from app. database.connection import get_db
-from app.models.users import User
+from app.models.users import User, UserRole
 
 security = HTTPBearer()
 
@@ -34,3 +34,24 @@ def get_current_user(credentials:HTTPAuthorizationCredentials = Depends(security
         )
 
     return user.id
+
+def require_admin(current_user_id: int = Depends(get_current_user), db: Session = Depends(get_db)):
+    statement = select(User).where(User.id == current_user_id)
+
+    result = db.execute(statement)
+
+    user = result.scalar_one_or_none()
+
+    if not user:
+        raise HTTPException(
+            status_code=404,
+            detail="Usuario no encontrado"
+        )
+
+    if user.role != UserRole.ADMIN:
+        raise HTTPException(
+            status_code=403,
+            detail="No tiene permisos suficientes"
+        )
+
+    return user
