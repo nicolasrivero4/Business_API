@@ -40,3 +40,14 @@
 2026-08-23 17:31:14,344 | INFO | Se actualizo la categoria. ID: 3
 2026-08-23 17:36:45,909 | INFO | Inicio de sesion. Email: prueba@example.com
 2026-08-23 17:36:59,517 | INFO | Se elimino una categoria. ID: 1
+2026-08-24 12:41:48,872 | INFO | Inicio de sesion. Email: usuario_empleado@example.com
+2026-08-24 12:42:21,221 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-24 12:43:19,915 | INFO | Se agrego un nuevo producto. ID: 1
+2026-08-24 12:43:32,361 | WARNING | Se intento crear un producto repetido. Nombre: string
+2026-08-24 12:51:54,765 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-24 12:52:47,229 | INFO | Se agrego un nuevo producto. ID: 3
+2026-08-24 13:17:05,041 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-24 13:18:49,917 | INFO | Se agrego un nuevo producto. ID: 4
+2026-08-24 13:19:39,264 | WARNING | Se intento utilizar el nombre de un producto existente. Nombre: Helado
+2026-08-24 13:20:07,028 | INFO | Se actualizo el producto. ID: 1
+2026-08-24 13:20:27,739 | INFO | Producto eliminado. ID: 1

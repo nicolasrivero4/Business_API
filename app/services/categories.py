@@ -108,5 +108,5 @@ class CategoryService:
         db.delete(category)
         db.commit()
 
-        logger.info("Se elimino una categoria. ID: %s", category.id)
+        logger.info("Se elimino una categoria. ID: %s", category_id)
     

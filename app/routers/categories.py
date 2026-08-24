@@ -2,7 +2,6 @@ from fastapi import APIRouter, Depends
 
 from sqlalchemy.orm import Session
 
-from app.models.categories import Category
 from app.models.users import User
 from app.schemas.categories import CategoryCreate, CategoryResponse, CategoryUpdate
 from app.services.categories import CategoryService
