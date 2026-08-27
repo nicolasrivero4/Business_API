@@ -2,7 +2,7 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict, Field, EmailStr
 
-from app.schemas.enum import UserRole
+from app.models.users import UserRole
 
 class UserResponse(BaseModel):
     id: int
