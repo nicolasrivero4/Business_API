@@ -5,6 +5,7 @@ from app.routers.login import router as login_router
 from app.routers.categories import router as category_router
 from app.routers.products import router as product_router
 from app.routers.movements import router as movement_router
+from app.routers.customers import router as customer_router
 
 app = FastAPI()
 
@@ -36,4 +37,10 @@ app.include_router(
     movement_router,
     prefix="/movement",
     tags=["Movement"]
+)
+
+app.include_router(
+    customer_router,
+    prefix="/customer",
+    tags=["Customer"]
 )

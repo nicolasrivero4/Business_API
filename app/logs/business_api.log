@@ -66,3 +66,8 @@
 2026-08-27 01:26:29,075 | INFO | Inicio de sesion. Email: prueba@example.com
 2026-08-27 01:38:54,027 | INFO | Inicio de sesion. Email: prueba@example.com
 2026-08-27 01:44:19,029 | INFO | Se agrego un nuevo movimiento. ID: 10
+2026-08-27 16:10:48,985 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-27 16:12:40,561 | INFO | El usuario 6 creo un nuevo cliente. ID: 1
+2026-08-27 16:13:12,546 | INFO | El usuario 6 creo un nuevo cliente. ID: 3
+2026-08-27 16:13:49,322 | INFO | El usuario 6 actualizo los datos del cliente. ID: 1
+2026-08-27 16:14:02,147 | INFO | El usuario 6 elimino al cliente. ID: 1
