@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 
 from sqlalchemy.orm import Session
 
-from app.dependencies import require_admin, get_current_user
+from app.dependencies import require_admin
 from app.database.connection import get_db
 from app.models.users import User
 from app.schemas.movements import MovementCreate, MovementResponse

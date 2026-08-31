@@ -6,6 +6,7 @@ from app.routers.categories import router as category_router
 from app.routers.products import router as product_router
 from app.routers.movements import router as movement_router
 from app.routers.customers import router as customer_router
+from app.routers.orders import router as order_router
 
 app = FastAPI()
 
@@ -43,4 +44,10 @@ app.include_router(
     customer_router,
     prefix="/customer",
     tags=["Customer"]
+)
+
+app.include_router(
+    order_router,
+    prefix="/order",
+    tags=["Order"]
 )

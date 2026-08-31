@@ -71,3 +71,20 @@
 2026-08-27 16:13:12,546 | INFO | El usuario 6 creo un nuevo cliente. ID: 3
 2026-08-27 16:13:49,322 | INFO | El usuario 6 actualizo los datos del cliente. ID: 1
 2026-08-27 16:14:02,147 | INFO | El usuario 6 elimino al cliente. ID: 1
+2026-08-29 19:30:45,182 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-29 19:35:26,638 | INFO | Se agrego un nuevo movimiento. ID: 11
+2026-08-29 19:35:37,559 | INFO | Se agrego un nuevo movimiento. ID: 12
+2026-08-29 19:38:15,086 | INFO | El usuario 6 agrego un nuevo movimiento. ID: 1
+2026-08-29 19:40:15,838 | WARNING | No se pudo generar la orden proporcionada por el usuario. ID: 6
+2026-08-29 19:41:05,114 | INFO | El usuario 6 agrego un nuevo movimiento. ID: 4
+2026-08-31 00:57:58,040 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-31 01:53:21,451 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-31 02:13:39,424 | INFO | El usuario 6 cambio el estado de la orden 4.  Status:OrderStatus.READY
+2026-08-31 02:15:15,930 | INFO | El usuario 6 cambio el estado de la orden 4.  Status:COMPLETED
+2026-08-31 03:03:11,205 | INFO | Inicio de sesion. Email: prueba@example.com
+2026-08-31 03:04:56,285 | INFO | El usuario 6 agrego un nuevo movimiento. ID: 5
+2026-08-31 03:09:25,886 | INFO | El usuario 6 cambio el estado de la orden 1.  Status:OrderStatus.PENDING
+2026-08-31 03:09:41,726 | INFO | El usuario 6 cambio el estado de la orden 1.  Status:OrderStatus.PENDING
+2026-08-31 03:10:06,684 | INFO | El usuario 6 cambio el estado de la orden 1.  Status:PENDING
+2026-08-31 03:11:06,642 | INFO | El usuario 6 cambio el estado de la orden 1.  Status:COMPLETED
+2026-08-31 03:12:50,305 | INFO | El usuario 6 cambio el estado de la orden 5.  Status:CANCELLED

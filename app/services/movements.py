@@ -4,7 +4,6 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
 
-from app.models.users import User
 from app.models.products import Product
 from app.models.movements import Movement, MovementType
 from app.core.logger import logger
@@ -22,10 +21,6 @@ class MovementService:
                 status_code=404,
                 detail="Producto no encontrado"
             )
-
-        print("movement_type:", movement_type)
-        print("Movementtype.IN:", MovementType.IN)
-        print("¿Son iguales?:", movement_type == MovementType.IN)
         
         if movement_type == MovementType.IN:
             product.stock += quantity

@@ -88,7 +88,7 @@ class CustomerService:
 
             raise HTTPException(
                 status_code=400,
-                detail="No se pudieron actualizar los datos del cliente"
+                detail="No se pudo actualizar los datos del cliente"
             )
 
     def customer_delete(self, db: Session, user_id, customer_id):
