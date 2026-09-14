@@ -2,7 +2,7 @@ from enum import Enum as PyEnum
 from datetime import datetime
 from decimal import Decimal
 
-from sqlalchemy import Numeric, DateTime, Integer, ForeignKey, Enum, Text, func
+from sqlalchemy import CheckConstraint, Numeric, DateTime, Integer, ForeignKey, Enum, Text, func
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.database.base import Base
@@ -13,6 +13,10 @@ class MovementType(PyEnum):
 
 class Movement(Base):
     __tablename__ = "movements"
+
+    __table_args__= (
+        CheckConstraint("quantity > 0", name="check_movement_quantity_positive"),
+    )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     product_id: Mapped[int] = mapped_column(ForeignKey("products.id"), nullable=False)

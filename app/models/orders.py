@@ -2,7 +2,7 @@ from enum import Enum as PyEnum
 from decimal import Decimal
 from datetime import datetime
 
-from sqlalchemy import Integer, ForeignKey, Enum, Numeric, DateTime, text, func
+from sqlalchemy import CheckConstraint, Integer, ForeignKey, Enum, Numeric, DateTime, text, func
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.database.base import Base
@@ -14,6 +14,10 @@ class OrderStatus(PyEnum):
 
 class Order(Base):
     __tablename__ = "orders"
+
+    __table_args__= (
+        CheckConstraint("total >= 0", name="check_order_total_nonnegative"),
+    )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     customer_id: Mapped[int] = mapped_column(ForeignKey("customers.id"), nullable=False)

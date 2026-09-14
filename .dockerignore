@@ -1,10 +1,12 @@
 .env
+.git
+.gitignore
+__pycache__/
+*.pyc
 .venv/
 venv/
-*.log
-__pycache__/
 backups/
+.pytest_cache/
 tests/
-*.pyc
 test_db_cr_user.py
 test_db_se_user.py

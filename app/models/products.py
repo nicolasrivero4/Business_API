@@ -1,13 +1,18 @@
 from datetime import datetime
 from decimal import Decimal
 
-from sqlalchemy import Numeric, DateTime, ForeignKey, Integer, String, Text, func
+from sqlalchemy import CheckConstraint, Numeric, DateTime, ForeignKey, Integer, String, Text, func
 from sqlalchemy.orm import Mapped, mapped_column
 
 from app.database.base import Base
 
 class Product(Base):
     __tablename__ = "products"
+
+    __table_args__= (
+            CheckConstraint("stock >= 0", name="check_product_stock_nonnegative"),
+            CheckConstraint("price >= 0", name="check_product_price_nonnegative"),
+        )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     name: Mapped[str] = mapped_column(String(50), nullable=False, unique=True)
